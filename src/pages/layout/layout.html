@@ -1,5 +1,5 @@
 <!--
-  Generated template for the HomePage page.
+  Generated template for the LayoutPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,12 +7,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>home</ion-title>
+    <ion-title>layout</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <button ion-item  *ngFor="let p of pages" (click)="openPage(p.page)">
+    {{p.name}}
+  </button>
 </ion-content>
