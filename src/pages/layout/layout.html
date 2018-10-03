@@ -6,7 +6,7 @@
       <ion-segment-button id="contacts-b" value="Contacts">
           <ion-icon ios="ios-contacts" md="md-contacts"></ion-icon>
       </ion-segment-button>
-      <ion-segment-button id="contacts-b" value="profile">
+      <ion-segment-button id="contacts-b" value="Profile">
           <ion-icon ios="ios-contact" md="md-contact"></ion-icon>
         </ion-segment-button>
     </ion-segment>
@@ -17,14 +17,21 @@
       <ion-list *ngSwitchCase="'Profile'" id="main-window">
           
           <ion-item id="main-window" >
-              <ion-thumbnail item-start>
-                <img src="https://3.imimg.com/data3/RQ/JT/MY-3324731/ruby-stone-500x500.jpg">
-              </ion-thumbnail>
-              <h2>Ruby</h2>
+          
+                <img id ="profpic"src="https://3.imimg.com/data3/RQ/JT/MY-3324731/ruby-stone-500x500.jpg">
+              
+              <h2>Ruby<ion-icon id="edit-i1" ios="ios-create" md="md-create"></ion-icon></h2>
+            </ion-item>
+            <ion-item>
+                <h2>Life is good!!<ion-icon id="edit-i" ios="ios-create" md="md-create"></ion-icon></h2>
+              </ion-item>
+            <ion-item>
+              <h2>ruby56@gmail.com</h2>
             </ion-item>
           
         </ion-list>
     <ion-list *ngSwitchCase="'Contacts'" id="main-window">
+        <ion-item-sliding>
         <ion-searchbar ></ion-searchbar>
       <ion-item id="main-window" >
         <ion-thumbnail item-start>
@@ -32,10 +39,11 @@
         </ion-thumbnail>
         <h2>Ruby</h2>
       </ion-item>
-      
+      </ion-item-sliding>
     </ion-list>
   
     <ion-list *ngSwitchCase="'chats'" id="main-window">
+        <ion-item-sliding>
         <ion-searchbar ></ion-searchbar>
       <ion-item id="main-window">
         <ion-thumbnail item-start>
@@ -49,6 +57,6 @@
           </ion-thumbnail>
           <h2>Luna</h2>
         </ion-item>
-    
+    </ion-item-sliding>
     </ion-list>
   </div>
