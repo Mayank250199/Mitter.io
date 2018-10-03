@@ -1,3 +1,39 @@
 page-login {
+    ion-item{
+        max-width: 40%;
+        opacity: 0.5;
+        
+    }
 
+    ion-list{
+         
+        margin: auto;
+        max-width: 100%;
+        justify-content:center;align-items:center;
+        
+        display: -webkit-flex;
+        
+    }
+    #slide1{
+        
+        background-image: url("../../assets/imgs/back-image.jpg");
+    }
+    #slide2{
+        
+        background-image: url("../../assets/imgs/back-image1.jpg");
+    }
+ ion-input{
+    display:flex;justify-content:center;align-items:center;
+     max-width:100%;border-top:none;border-left:none;
+    border-right:none;height:20px;line-height:20px;
+    font-size:20px;transition:all .23s ease-in;
+    
+}
+h1{
+    color: #681558;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #07103f
+}
+    
 }

@@ -7,12 +7,59 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>login</ion-title>
+    <ion-title>login/SignUp</ion-title>
   </ion-navbar>
-
+  
 </ion-header>
+<ion-slides pager>
+
+    <ion-slide id="slide1" >
+      <h1 style="padding-bottom: 5%;color:#290d44;">Login!!</h1>
+      <ion-list>
+
+          <ion-item>
+            <ion-input type="text" value="" placeholder="Username"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input type="password" placeholder="Password"></ion-input>
+          </ion-item>
+        
+        </ion-list>
+        <button ion-button color="dark" outline>login</button>
+        <h4>OR</h4>
+        <h3>Swipe left to SignUp     <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright"></ion-icon>  <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright"></ion-icon> <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright"></ion-icon></h3>
+    </ion-slide>
+  
+    <ion-slide id="slide2" style="background-color:#8774ad">
+        <h1 style="padding-bottom: 5%">SignUp!!</h1>
+        <ion-list>
+  
+            <ion-item>
+              <ion-input type="text" value="" placeholder="Username"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-input type="text" placeholder="e-mail"></ion-input>
+              </ion-item>
+            <ion-item>
+              <ion-input type="password" placeholder="Password"></ion-input>
+            </ion-item>
+          
+          </ion-list>
+          <button ion-button color="dark" outline>SignUp</button>
+       
+    </ion-slide>
+  
+    
+  
+  </ion-slides>
 
 
-<ion-content padding>
+ 
+
+
+
+<ion-content>
 
 </ion-content>
