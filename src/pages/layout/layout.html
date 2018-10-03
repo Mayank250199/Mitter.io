@@ -1,21 +1,54 @@
-<!--
-  Generated template for the LayoutPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>layout</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-
-<ion-content padding>
-  <button ion-item  *ngFor="let p of pages" (click)="openPage(p.page)">
-    {{p.name}}
-  </button>
-</ion-content>
+<div  >
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button  id="chat-b" value="chats">
+          <ion-icon ios="ios-chatboxes" md="md-chatboxes"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button id="contacts-b" value="Contacts">
+          <ion-icon ios="ios-contacts" md="md-contacts"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button id="contacts-b" value="profile">
+          <ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+        </ion-segment-button>
+    </ion-segment>
+  </div>
+  
+  <div [ngSwitch]="pet" id="main-window">
+    
+      <ion-list *ngSwitchCase="'Profile'" id="main-window">
+          
+          <ion-item id="main-window" >
+              <ion-thumbnail item-start>
+                <img src="https://3.imimg.com/data3/RQ/JT/MY-3324731/ruby-stone-500x500.jpg">
+              </ion-thumbnail>
+              <h2>Ruby</h2>
+            </ion-item>
+          
+        </ion-list>
+    <ion-list *ngSwitchCase="'Contacts'" id="main-window">
+        <ion-searchbar ></ion-searchbar>
+      <ion-item id="main-window" >
+        <ion-thumbnail item-start>
+          <img src="https://3.imimg.com/data3/RQ/JT/MY-3324731/ruby-stone-500x500.jpg">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+      
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'chats'" id="main-window">
+        <ion-searchbar ></ion-searchbar>
+      <ion-item id="main-window">
+        <ion-thumbnail item-start>
+          <img src="https://www.residentadvisor.net/images/profiles/missluna.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+      <ion-item id="main-window">
+          <ion-thumbnail item-start>
+            <img src="https://www.residentadvisor.net/images/profiles/missluna.jpg">
+          </ion-thumbnail>
+          <h2>Luna</h2>
+        </ion-item>
+    
+    </ion-list>
+  </div>
