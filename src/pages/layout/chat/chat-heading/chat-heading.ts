@@ -1,25 +1,24 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the ChatHeadingPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-chat-heading',
+  templateUrl: 'chat-heading.html',
 })
-export class HomePage {
+export class ChatHeadingPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    console.log('ionViewDidLoad ChatHeadingPage');
   }
 
 }
